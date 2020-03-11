@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Margin e padding aqui servem para que a borda externa se expanda e não fique com margem */
+}
+
+header {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /* border: 2px solid #ccc; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    text-align: center;
+   
+
+}
+
+header ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+header li {
+    display: inline-block;
+    margin: 10px 20px;
+    /* border: 2px solid black; */
+}
+
+/* colocar itens da linha um ao lado do outro */
+/* Padding como preenchimento interno do elemento. Margin é o espaçamento externo do elemento - do botão. O border é a borda externa */
+/* Importante sempre inspecionar o código no navegador */
+li a {
+    text-decoration: none;
+    color: #555;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+main{
+    margin-top: 138px !important;
+}
+/* começo footer */
+footer p {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+section#banner {
+    background-image: url("../img/jane.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 73vh;
+    /* Ao invés de usar porcentagem pode-se usar: width viewport vw; height viewport vh */
+}
+
+main#about cite {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main#about img {
+    width: 450px;
+}
+
+main#about {
+    padding: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+main#about p {
+    font-size: 13px;
+}
+main#about h2{
+    font-size: 30px;
+}
+li a.active{
+    font-weight: bold;
+    color: red;
+}
+
+main#music {
+    padding: 30px;
+    max-width: 100%;
+}
+main#music p{
+    line-height: 30px;
+}
+main#music h2{
+    font-size: 30px;
+}
+main#contact{
+    width: 80vw;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+section#concept, section#songs{
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 100%;
+}
+section#songs img{
+    width: 100%;
+}
+.duas-colunas > div{
+    float: left;
+    width: 50%;
+}
+.duas-colunas{
+    overflow: hidden;
+}
+section#songs li{
+    line-height: 35px;
+}
+section#songs strong{
+    color: rgb(233, 152, 3);
+}
+form input[type="text"], textarea{
+    width: 100%;
+    padding: 5px;
+}
+.form-group{
+    margin: 0 0 10px;
+}
+form textarea{
+    resize: none;
+    height: 100px;
+}
+form button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+}
+.mapa{
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.mapa iframe{
+    width: 100%;
+    height: 400px;
+}
+@media (max-width: 768px){
+    .duas-colunas>div{
+        width: 100%;
+    }
+    section#concept, section#songs{
+        padding: 40px;
+    }
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        font-size: 24px;
+        line-height: 20px;
+    }
+    ol li{
+        font-size: 24px;
+    }
+    nav ul li a{
+        font: size 24px;
+    }
+    main#music{
+        padding: 0 40px;
+    }
+    main#music iframe{
+        width: 100%;
+    }
+    main#music ul li{
+        font-size: 24px;
+    }
+    main#contact{
+        line-height: 30px;
+        font-size: 24px;
+    }
+    main#contact form button{
+        padding: 10px 40px;
+        font-size: 24px;
+        margin: 30px 0;
+        
+    }
+    main#contact h3{
+        font-size: 26px;
+    }
+    main#contact form input{
+        padding: 10px;
+    }
+    main#contact .form-group{
+        margin-bottom: 30px;
+    }
